@@ -1,19 +1,26 @@
 # DRCR Net: Dense Residual Channel Re-calibration Network with Non-local Purification for Spectral Super Resolution (CVPRW 2022)
 [![3rd](https://img.shields.io/badge/3rd%20place-NTIRE__2022__Challenge__on__Spectral__Reconstruction__from__RGB-orange)](https://codalab.lisn.upsaclay.fr/competitions/721#learn_the_details)
 [![cvprw](https://img.shields.io/badge/CVPRW-DRCR%20Net-green)](https://openaccess.thecvf.com/content/CVPR2022W/NTIRE/papers/Li_DRCR_Net_Dense_Residual_Channel_Re-Calibration_Network_With_Non-Local_Purification_CVPRW_2022_paper.pdf)
-![visitors](https://visitor-badge.glitch.me/badge?page_id=jojolee6513/DRCR-net)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=dusongcheng/DRCR-Net)
 
 [Jiaojiao Li](https://scholar.google.com/citations?user=Ccu3-acAAAAJ&hl=zh-CN&oi=ao), [Songcheng Du](https://github.com/dusongcheng), [Chaoxiong Wu](https://scholar.google.com/citations?user=PIsTkkEAAAAJ&hl=zh-CN&oi=ao), [Yihong Leng](), [Rui Song](https://scholar.google.com/citations?user=_SKooBYAAAAJ&hl=zh-CN&oi=sra) and [Yunsong Li]()
 
 <hr />
-> **Abstract:** Spectral super resolution (SSR) aims to reconstruct the 3D hyperspectral signal from a 2D RGB image, which is prosperous with the proliferation of Convolutional Neural Networks (CNNs) and increased access to RGB/hyperspectral datasets. Nevertheless, most CNN-based spectral reconstruction (SR) algorithms can only perform high reconstruction accuracy when the input RGB image is relatively ‘clean' with foregone spectral response functions. Unfortunately, in the real world, images are contaminated by mixed noise, bad illumination conditions, compression, artifacts etc. and the existing state-of-the-art (SOTA) methods are no longer working well. To conquer these drawbacks, we propose a novel dense residual channel re-calibration network (DRCR Net) with non-local purification for achieving robust SSR results, which first performs the interference removal through a non-local purification module (NPM) to refine the RGB inputs. To be specific, as the main component of backbone, the dense residual channel re-calibration (DRCR) block is cascaded with an encoder-decoder paradigm through several cross-layer dense residual connections, to capture the deep spatial-spectral interactions, which further improve the generalization ability of the network effectively. Furthermore, we customize dual channel re-calibration modules (CRMs) which are embedded in each DRCR block to adaptively re-calibrate channel-wise feature response for pursuing high-fidelity spectral recovery. In the NTIRE 2022 Spectral Reconstruction Challenge, our entry obtained the $3$rd ranking.
+
+> **Abstract:** Spectral super resolution (SSR) aims to reconstruct the 3D hyperspectral signal from a 2D RGB image, which is prosperous with the proliferation of Convolutional Neural Networks (CNNs) and increased access to RGB/hyperspectral datasets. Nevertheless, most CNN-based spectral reconstruction (SR) algorithms can only perform high reconstruction accuracy when the input RGB image is relatively ‘clean' with foregone spectral response functions. Unfortunately, in the real world, images are contaminated by mixed noise, bad illumination conditions, compression, artifacts etc. and the existing state-of-the-art (SOTA) methods are no longer working well. To conquer these drawbacks, we propose a novel dense residual channel re-calibration network (DRCR Net) with non-local purification for achieving robust SSR results, which first performs the interference removal through a non-local purification module (NPM) to refine the RGB inputs. To be specific, as the main component of backbone, the dense residual channel re-calibration (DRCR) block is cascaded with an encoder-decoder paradigm through several cross-layer dense residual connections, to capture the deep spatial-spectral interactions, which further improve the generalization ability of the network effectively. Furthermore, we customize dual channel re-calibration modules (CRMs) which are embedded in each DRCR block to adaptively re-calibrate channel-wise feature response for pursuing high-fidelity spectral recovery. In the NTIRE 2022 Spectral Reconstruction Challenge, our entry obtained the 3rd ranking.
 <hr />
+
+
+
 ## DRCR Net Framework
 <img src="./figure/network.png"/>
 
-## CRM
 
+
+## CRM
 <img src="./figure/CRM.png"  align="left" style="zoom: 30%;"/>
+
+
 
 ## Train
 1. #### Download the dataset.
