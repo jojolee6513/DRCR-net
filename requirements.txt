@@ -1,0 +1,7 @@
+# Environment requirement
+- Anaconda3 
+- pytorch1.9.0
+- hdf5storage 
+- opencv-python 
+- h5py
+- tqdm
